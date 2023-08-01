@@ -22,7 +22,7 @@ spec:
         app: open5gs-mongodb
     spec:
       containers:
-      - image: free5gmano/nextepc-mongodb
+      - image: quay.io/csatyam142/nextepc-mongodb
         name: open5gs-mongodb
         ports:
         - containerPort: 27017
