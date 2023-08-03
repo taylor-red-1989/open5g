@@ -49,8 +49,6 @@ spec:
       nodeName: ocp-team2-worker.ocpt2.ocpt2.local    
       containers:
         - name: amf
-          securityContext:
-            privileged: true
           image: "{{ .Values.open5gs.image.repository }}:{{ .Values.open5gs.image.tag }}"
           imagePullPolicy: {{ .Values.open5gs.image.pullPolicy }}
           command: ["open5gs-amfd", "-c", "/open5gs/config-map/amf.yaml"]

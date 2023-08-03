@@ -18,6 +18,7 @@ data:
         port: 80
         s_nssai:
           sst: 1        
+          sd: 1
     nrf:
      sbi:
       name: open5gs-nrf
